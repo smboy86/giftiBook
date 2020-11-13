@@ -12,7 +12,8 @@
   "dependencies": {
     "react": "16.13.1",
     "react-native": "0.63.3",
-    "react-native-bootsplash": "^2.2.8"
+    "react-native-bootsplash": "^2.2.8",
+    "react-native-webview": "^10.10.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
