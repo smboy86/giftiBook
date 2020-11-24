@@ -14,10 +14,9 @@ import {
   View,
   Text,
   StatusBar,
-  TouchableWithoutFeedback,
 } from 'react-native';
-import {WebView} from 'react-native-webview';
 import RNBootSplash from 'react-native-bootsplash';
+import RootNavigator from './src/navigation/RootNavigator';
 
 const App: () => React$Node = () => {
   let init = async () => {
@@ -32,17 +31,7 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <TouchableWithoutFeedback style={{flex: 1, paddingHorizontal: 16}}>
-        <WebView
-          style={{flex: 1, backgroundColor: '#000'}}
-          startInLoadingState={true}
-          source={{
-            uri:
-              'http://dalgong.devpoi.com/page/giftibook/samples/basic/index.html',
-            // 'http://naver.com',
-          }}
-        />
-      </TouchableWithoutFeedback>
+      <RootNavigator />
     </>
   );
 };
