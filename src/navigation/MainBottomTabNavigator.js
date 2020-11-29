@@ -7,14 +7,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import {WebView} from 'react-native-webview';
 
 import {AppScreens} from './AppScreens';
-
-const tempIntro = () => {
-  return (
-    <View>
-      <Text>인트로</Text>
-    </View>
-  );
-};
+import IntroScreen from '../screens/Intro';
 
 const tempMain = () => {
   return (
@@ -85,7 +78,7 @@ function BottomTabs() {
       barStyle={{backgroundColor: '#181818'}}>
       <BottomTab.Screen
         name={AppScreens.INTRO}
-        component={tempIntro}
+        component={IntroScreen}
         options={{
           tabBarLabel: '서문',
           tabBarIcon: ({color, focused}) => (
